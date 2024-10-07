@@ -1,0 +1,55 @@
+{% extends '/base.html' %}
+{%block pestaña%}
+¿Quienes Somos?
+{%endblock%}
+
+{%block main %}
+
+<section class="specs section grid" id="specs">
+    <h2 class="section__title section__title-gradient">Historia de b-Ecomer</h2>
+    <div class="specs__container container grid">
+        <div class="specs__content grid">
+            <div class="specs__data">
+                <span class="specs__subtitle">Esta empresa formada por hermanos, se fundo en un momento oportuno para el crecimiento de esta. En 2019 con llegada de la pandemia del Coronavirus las personas no podian comprar sus electrodomesticos presencialmente, la solucion b-Ecomer que es un Comercio Electronico de Electrodomesticos quien se enfocó en ofrecer productos de calidad y servicio personalizado, lo que les permitió destacar en un sector competitivo. <br> La clave de su exito radica en la combinacion de <b>calidad, al cliente y precios accesibles.</b></span>
+            </div>
+
+            <div class="specs__data">
+                <i class="ri-send-plane-line"></i>
+                <h3 class="specs__title">Misión</h3>
+                <span class="specs__subtitle">Satisfacer las necesidades de nuestros clientes ofreciendo producto de alta calidad y tecnología innovadora.</span>
+            </div>
+            <div class="specs__data">
+                <i class="ri-heart-line"></i>
+                <h3 class="specs__title">Visión</h3>
+                <span class="specs__subtitle">Convertirse en el líder del mercado digital en electrodomésticos, reconocido por su excelencia en productos y servicios de envio, por su capacidad de adaptarse a las tendencias tecnológicas y las expectativas de los consumidores.</span>
+            </div>
+        </div>
+
+        <div>
+            <img src="{{url_for('static',filename='img/ecomer-logo.png')}}" alt="" class="specs__img">
+        </div>
+    </div>
+</section>
+
+
+<section class="discount section">
+    <div class="discount__container container grid">
+        <div class="discount__animate">
+            <h2 class="discount__title">Equipo de Trabajo</h2>
+            <p class="discount__description">La colaboracion de estos es esencialmente para el funcionamiento optimo de b-Ecomer.
+            </p>
+            <ul>
+                <li>-  Gerente de b-Ecomer</li>
+                <li>-  Equipo de Marketing Digital</li>
+                <li>-  Desarrolladores Web</li>
+                <li>-  Atencion del cliente</li>
+                <li>-  Logistica y almacén</li>
+            </ul>
+        </div>
+
+        <img src="{{url_for('static',filename='img/equipo1.jpg')}}" alt="" class="discount__img">
+    </div>
+</section>
+
+      
+{%endblock %}

@@ -1,0 +1,85 @@
+{% extends '/base.html' %}
+{%block pestaña%}
+Servicios
+{%endblock%}
+
+{%block main %}
+<section class="products section" id="products">
+    <h2 class="section__title section__title-gradient products__line">
+        Elige <br> un Servicio
+    </h2>
+
+    <div class="products__container container grid">
+        <article class="products__card">
+            <div class="products__content">
+                <style>
+                    .products__img {
+                        width: 50px;
+                        position: absolute;
+                        inset: 0;
+                        margin-right: auto;
+                        margin-left: auto;
+                        top: -4rem;
+                    }
+                </style>
+                <img src="{{url_for('static',filename='img/img1.jpg')}}" alt="" class="products__img">
+
+                <h3 class="products__title">Catálogo de productos</h3>
+                <span class="products__price">Donde los clientes pueden explorar una amplia gama de
+                    electrodomésticos</span>
+
+                <button class="button button--flex products__button">
+                    <i class="ri-eye-line"></i>leer más
+                </button>
+            </div>
+        </article>
+        <article class="products__card">
+            <div class="products__content">
+                <img src="{{url_for('static',filename='img/img2.jpg')}}" alt="" class="products__img">
+
+                <h3 class="products__title">Servicio de Entrega</h3>
+                <span class="products__price">Incluye diferentes opciones de entrega.</span>
+
+                <button class="button button--flex products__button">
+                    <i class="ri-eye-line"></i>leer más
+                </button>
+            </div>
+        </article>
+        <article class="products__card">
+            <div class="products__content">
+                <img src="{{url_for('static',filename='img/img3.jpg')}}" alt="" class="products__img">
+
+                <h3 class="products__title">Promociones y Descuentos</h3>
+                <span class="products__price">Ofrece promociones especiales y descuentos por temporada.</span>
+                <button class="button button--flex products__button">
+                    <i class="ri-eye-line"></i>leer más
+                </button>
+            </div>
+        </article>
+        <article class="products__card">
+            <div class="products__content">
+                <img src="{{url_for('static',filename='img/img4.jpg')}}" alt="" class="products__img">
+
+                <h3 class="products__title">Garantía y Servicio Postventa</h3>
+                <span class="products__price">Resolver cualquier inconveniente después de la compra.</span>
+                <button class="button button--flex products__button">
+                    <i class="ri-eye-line"></i>leer más
+                </button>
+            </div>
+        </article>
+
+        <article class="products__card">
+            <div class="products__content">
+                <img src="{{url_for('static',filename='img/img5.jpg')}}" alt="" class="products__img">
+
+                <h3 class="products__title">Asesoramiento Personalizado</h3>
+                <span class="products__price">Asesoramiento sobre los productos que se adapten mejor a sus
+                    necesidades.</span>
+                    <button class="button button--flex products__button">
+                        <i class="ri-eye-line"></i>leer más
+                    </button>
+            </div>
+        </article>
+    </div>
+</section>
+{%endblock %}

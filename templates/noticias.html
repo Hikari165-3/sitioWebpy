@@ -1,0 +1,31 @@
+{% extends '/base.html' %}
+{%block pestaña%}
+Noticias-b-Ecomer
+{%endblock%}
+
+{%block main %}
+<section class="discount section">
+    <div class="discount__container container grid">
+        <div class="discount__animate">
+            <h2 class="discount__title">Ultima novedad de Auriculares</h2>
+            <p class="discount__description">Estos conbinan tecnologia avanzada con un diseño elegante, ofreciendo una experiencia de audio inigualable. <br>Estos dispositivos suelen incluir caracteristicas como conectividad Bluetooth, cancelación de ruido y controles.</p>
+            
+        </div>
+
+        <img src="{{url_for('static',filename='img/discount.png')}}" alt="" class="discount__img">
+    </div>
+</section>
+
+<section class="discount section">
+    <div class="discount__container container grid">
+        <div class="discount__animate">
+            <h2 class="discount__title">El comercio Electronico</h2>
+            <p class="discount__description">Las personas están adoptando nuevas tecnologías para mejorar sus plataformas de venta en línea, incluyendo métodos de pago innovadores y estategias de marketing digital más efectivas. <br> Estas estan reportando tendencias sobre como las startup están transformando el panorama del eCommerce, ofreciendo soluciones unicas que responden a las necesidades cambiantes de los consumidores.</p>
+            
+        </div>
+
+        <img src="{{url_for('static',filename='img/eco.jpg')}}" alt="" class="discount__img">
+    </div>
+</section>
+
+{%  endblock %}
